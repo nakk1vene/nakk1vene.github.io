@@ -23,6 +23,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	color:black;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -99,11 +100,15 @@ input, select, textarea {
 	}
 
 	body {
+		/*
 		background-color: #935d8c;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		*/
+		background-image: url("images/pink.jpg")
+		
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -303,19 +308,19 @@ input, select, textarea {
 	}
 
 	input, select, textarea {
-		color: #ffffff;
+		color: #000000;
 	}
 
 	a:hover {
-		color: #ffffff;
+		color: #B50E66;
 	}
 
 	strong, b {
-		color: #ffffff;
+		color: #000000;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #000000;
 	}
 
 	blockquote {
@@ -2488,7 +2493,7 @@ input, select, textarea {
 	}
 
 	dl dt {
-		color: #ffffff;
+		color: #000000;
 	}
 
 /* Actions */
@@ -2814,11 +2819,21 @@ input, select, textarea {
 	}
 
 		.features li {
-			width: calc(33.33333% - 2em);
 			margin-left: 2em;
 			margin-top: 3em;
 			padding: 0;
 		}
+		
+		.features .image {
+			display: inline-block;
+			padding: 0.65em;
+		}
+
+			.features .image img {
+				display: block;
+				width: 40em;
+
+			}
 
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
 				margin-top: 0;
